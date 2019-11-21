@@ -1,0 +1,15 @@
+<!--pages/profile/profile.wxml-->
+<view class="profile">
+   <view class="profile-img">
+     <!--获取当前登录用户头像-->
+     <!--头像在profile中间显示-->
+     <open-data type="userAvatarUrl"></open-data>
+   </view>
+   <view class="profile-name">
+     <!--获取当前登录用户昵称-->
+     <open-data type="userNickName"></open-data>
+   </view>
+</view>
+<button open-type="getUserInfo" bindgetuserinfo="getUser">
+获取用户信息
+</button>

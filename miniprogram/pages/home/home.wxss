@@ -1,0 +1,37 @@
+/* pages/home/home.wxss */
+/*一部电影区域*/
+/*1：最外层 view*/
+.movie{
+    display:flex;/*弹性布局*/
+    padding:10px;/*内边距离*/
+    border-bottom:1px solid #ccc;/*下划线*/
+}
+/*2:右侧图片*/
+.movie-img{
+    width:300rpx;/*图片宽度和高度切换响应式*/
+    height:300rpx;
+    margin-right:20rpx;/*右侧文字间距*/
+}
+/*3:电影介绍*/
+.movie-info{
+    flex:1;         /*将右侧区域填满*/
+    font-size:28rpx;/*修改右侧文字大小*/
+    line-height:1.8;/*行高原有文字间距1.8倍*/
+}
+/*4:电影标题*/
+.movie-title{
+    color:#666;/*标题文字颜色*/
+    font-size:40rpx;/*标题大小*/
+}
+/*5:电影评分*/
+.movie-score{
+    color:#faaf00;
+}
+/*6:电影详情*/
+.movie-comment{
+    height:60rpx;/*按钮高度*/
+    background:#e54847;/*背景颜色*/
+    color:#fff;/*文字颜色*/
+    font-size:30rpx;
+    margin-top:120rpx;/*与上面文字加间距*/
+}

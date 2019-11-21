@@ -1,0 +1,50 @@
+{
+  "pages": [
+     "pages/home/home",
+     "pages/comment/comment",
+     "pages/profile/profile",
+     "pages/map/map",
+     "pages/mymovie/mymovie",
+      "pages/movielist/movielist"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "大众影院",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "tabBar": {
+    "color":"#d1d1d1",
+    "selectedColor":"#333333",
+    "list": [
+      {
+      "pagePath": "pages/home/home",
+      "text": "电影",
+      "iconPath": "images/01.png",
+      "selectedIconPath": "images/01_active.png"
+     },
+      {
+        "pagePath": "pages/profile/profile",
+        "text": "个人中心",
+        "iconPath": "images/02.png",
+        "selectedIconPath": "images/02_active.png"
+      },
+        {
+          "pagePath": "pages/map/map",
+          "text": "地图",
+          "iconPath": "images/03.png",
+          "selectedIconPath": "images/03_active.png"
+        },
+        {
+          "pagePath": "pages/mymovie/mymovie",
+          "text": "喜欢",
+          "iconPath": "images/04.png",
+          "selectedIconPath": "images/04_active.png"
+        }
+      
+    ]
+  }
+}

@@ -1,0 +1,51 @@
+<!--pages/comment/comment.wxml-->
+<!-- <text>电影详情</text> -->
+<!--背景图片 模糊电影大图-->
+<view class="detail-container" style="background:url({{detail.images.large}}) no-repeat top">
+</view><!--提前结束-->
+    <!--遮罩层 深灰色-->
+    <view class="detail-mask"></view>
+    <!--电影介绍-->
+    <view class="detail-info">
+      <!--左侧电影图片  清晰-->
+      <image src="{{detail.images.large}}" class="detail-img"></image>
+      <!--右侧介绍-->
+      <view class="detail">
+        <!--右侧电影介绍-标题-->
+        <view>{{detail.title}}</view>
+        <!--右侧电影介绍-原标题-->
+        <view>{{detail.original_title}}</view>
+        <!--右侧电影介绍-分数-->
+        <view>{{detail.rating.average}}分</view>
+        <!--右侧电影介绍-国家-->
+        <view>{{detail.countries[0]}}</view>
+        <!--右侧电影介绍-导演-->
+         <view>{{detail.directors[0].name}}</view> 
+      </view><!--detail end-->
+    </view><!--detail-info end-->
+<!--电影描述-->
+<view class="desc">
+{{detail.summary}}
+</view>
+<!--评论 输入-->
+<van-cell-group>
+  <van-field
+    value="{{ content }}"
+    placeholder="请发表评论"
+    bind:change="onContentChange"
+  />
+</van-cell-group>
+<!--打分 输入-->
+<van-rate value="{{ score }}" bind:change="onChangeScore" />
+<!--上传图片按钮(选中图片)-->
+<van-button type="warning" size="large"  bindtap="uploadFile">
+   上传图片
+</van-button>
+<!---图片预览区域-->
+<view>
+  <image class="comment-img" wx:for="{{images}}" wx:key="index" src="{{item}}"></image>
+</view>
+<!--*发表评论-->
+<van-button type="default" size="large"  bindtap="comment">发表评论</van-button>
+
+

@@ -1,0 +1,15 @@
+<!--pages/movielist/movielist.wxml-->
+<!-- <text>pages/movielist/movielist.wxml</text> -->
+<!--我喜欢的电影列表-->
+<view class="container" wx:for="{{list}}" wx:key="index">
+<!--显示电影图片列表 多张图片 item.fielid-->
+<!--item.fielid[]云存储图片地址-->
+<image wx:for="{{item.fielid}}" wx:key="index" src="{{item}}">
+  
+</image>
+
+<!--电影名称-->
+<text>电影名称：{{item.name}}</text>
+<!--评论-->
+<text>评论：{{item.msg}}</text>
+</view>
